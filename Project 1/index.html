@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Compound interest</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+    <link href="styles/style-index.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+      <header> <!--website logo & menu-->
+      
+      <div class='container'>
+      
+        <img src='images/logo' alt='logo' class='logo'>
+          
+          <nav>
+          <ul>
+              <li><a href='one-objectives'>Objectives</a></li>
+              <li><a href='two-simple'>Simple Interest</a></li>
+              <li><a href='three-compound'>Compound Interest </a></li>
+              <li><a href='four-practice'>Practice</a></li>
+              <li><a href='five-compare'>Compare</a></li>
+              </ul>
+          </nav>
+      
+      
+      </div>
+      </header>
+  
+      
+      <!--the content in the dark blue block-->
+      <div class='blueblock'>
+        <h1>heading</h1>
+          
+        <h2>secondary heading</h2>
+          
+        <p><b style='color: #fff;'>bold text</b>, rest of the paragraph</p>
+      
+      </div>
+      
+      
+      
+      <!--instruction content (below the dark blue block)-->
+      <div class='instruction'> 
+      
+        <h1>heading</h1>
+        
+        <h2>secondary heading</h2>
+          
+        <p><b style='color: #515151;'>bold text</b>, paragraph</p>     
+      
+      </div>
+      
+      
+      <!--place for images-->
+      <div class='image'>
+        <img src='images/sample-image.png' alt="image attribute">
+        <p>image description</p>
+      </div>
+      
+      
+      <!--examples in the instruction-->
+      <div class='example'>
+        <h2>Example:</h2>
+        <p><b style='color: #515151;'>bold text</b> example description</p>   
+      </div>  
+       
+     
+      <!--multiple choice-->
+       <div class='multiple-choice'> 
+          <form>
+            <p>question description</p>
+            <p id='hintone' onclick='hintone()'>hint</p>
+          
+          <br>
+              
+          <div>
+            <input type="radio" id="choice-a"
+                   name="multiple question one" value="feedback-a">
+            <label for="feedback-a">A. xxx</label> <br>
+            <input type="radio" id="choice-b"
+                   name="multiple question one" value="feedback-b">
+            <label for="feedback-b">B. xxx</label> <br>
+            <input type="radio" id="choice-c"
+                   name="multiple question one" value="feedback-c">
+            <label for="feedback-c">C. xxx</label> <br>
+              <input type="radio" id="choice-c"
+                   name="multiple question one" value="feedback-d">
+            <label for="feedback-c">D. xxx</label> <br>
+          </div>
+           
+              <br><br>
+          
+          <!--entry box-->
+            <input type="text" id="type-a"
+                   name="open ended question one" value="feedback-a">
+            <label for="two-a">xx</label> <br>
+              
+              
+            <br>  
+              
+          <!--button-->
+            <button class='button' type="submit">Submit</button>
+        <br>
+
+           <!-- show the result & feedback-->
+              <div class="result">
+            <pre id="feedback"></pre> 
+              </div>
+                       
+          </form>              
+      </div>
+    
+      
+        <!--reference part-->
+      <div class='reference'>
+          <hr>
+          <p style="font-size: 16px; line-height: 0.8rem"><b>References</b></p>
+          <p style="font-size: 14px; line-height: 0.4rem;">1. Farmdrop---Here’s How To Tell If Your Eggs Are Fresh <a href='link put here'>&#x21FE;</a></p>
+      </div>
+
+      <br><br>
+      
+      <!--interactive exercises, grab the learner input-->
+      <script src="scripts/js-index.js"></script>
+     
+  </body>
+</html>

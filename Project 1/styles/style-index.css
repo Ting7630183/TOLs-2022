@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* header */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* to make the height of the navigation not 0 */
+header::after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px, 0;
+}
+
+nav {
+    float: right;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;  
+}
+
+nav a {
+    color: #B5B5B5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px; 
+    font-weight: 400;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a:active {
+    color: #000;
+}
+
+
+
+/* blue block */
+.blueblock {
+    background-color: #21286A;
+    padding: 55px 170px 50px;
+}
+
+.blueblock h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.blueblock h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.blueblock p {
+    color: #E1CDF0;
+    font-size: 18px;
+}
+
+
+
+/* instruction */
+.instruction {
+    padding: 20px 170px;
+}
+
+.instruction h1 {
+    color: #000;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.instruction h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.instruction p {
+    color: #515151;
+    font-size: 18px;
+}
+
+
+/* image */
+.image img {
+    max-width: 60%;
+    height: auto;
+    /* make it center */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image p {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* example */
+.example {
+    padding: 40px 170px 0;
+}
+
+.example h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.example p {
+    color: #515151;
+    font-size: 18px;
+}
+
+
+
+/*multiple choice */
+.multiple-choice {
+    padding: 10px 30px 10px;
+    margin: 0 170px;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+}
+
+.multiple-choice p {
+    color: #515151;
+    font-size: 18px;
+    line-height: 0.7rem;
+}
+
+#hintone {
+    display: inline-block;
+    width: auto;
+    font-size: 14px;
+    padding: 5px 20px;
+    text-align: center;
+    background-color: #C8F2FF;
+    margin-top: 5px;
+}
+
+
+.button {
+  background-color: #21286A;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  margin: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+
+#feedback {
+    background-color: #D3FFC8;
+    padding: 10px 25px;
+}
+
+
+
+
+/* references */
+.reference {
+     padding: 20px 170px;
+}
+
+.reference hr {
+    height: 1px;
+    background-color: #CBCBCB;
+    border: none;
+}
