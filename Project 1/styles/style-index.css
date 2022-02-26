@@ -157,15 +157,16 @@ nav a:active {
 #hintone {
     display: inline-block;
     width: auto;
-    font-size: 14px;
-    padding: 5px 20px;
+    font-size: 15px;
+    padding: 7px 15px;
     text-align: center;
     background-color: #C8F2FF;
     margin-top: 5px;
+    border-radius: 7px;
 }
 
 
-.button {
+#button-one, #button-two {
   background-color: #21286A;
   border: none;
   color: white;
@@ -179,12 +180,29 @@ nav a:active {
 }
 
 
-#feedback {
-    background-color: #D3FFC8;
-    padding: 10px 25px;
+
+#input-a {
+  width: 30%;
+  padding: 10px 7px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #8E8E8E;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 
+
+#feedback-one, #feedback-two {
+  width: 50%;
+  padding: 0 0;
+  margin: 5px 0;
+  display: inline-block;
+/*  border: 1px solid;*/
+/*  background-color: #BAF9AA;*/
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
 
 /* references */
@@ -197,3 +215,34 @@ nav a:active {
     background-color: #CBCBCB;
     border: none;
 }
+
+#home-heading1{
+    padding: 0px 0px;
+    margin: 0px 0;
+    font-size: 30px;
+}
+#home-heading2{
+    padding: 0px 0px;
+    margin: 0px 0;
+    font-size: 35px;
+}
+#objectives-tag{
+    color: black;
+}
+.objectives-top-box{
+    margin:auto;
+   
+    width: 900px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    background: rgba(225, 205, 240, 0.23);
+    border: 6px solid #E1CDF0;
+    box-sizing: border-box;
+    border-radius: 18px;
+}
+#objectives-top-box-note{
+    font-weight: bold;
+    text-align: center;
+}
+

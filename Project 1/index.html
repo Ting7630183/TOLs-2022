@@ -16,15 +16,13 @@
           
           <nav>
           <ul>
-              <li><a href='one-objectives'>Objectives</a></li>
-              <li><a href='two-simple'>Simple Interest</a></li>
-              <li><a href='three-compound'>Compound Interest </a></li>
-              <li><a href='four-practice'>Practice</a></li>
-              <li><a href='five-compare'>Compare</a></li>
+              <li><a href='one-objectives.html'>Objectives</a></li>
+              <li><a href='two-simple.html'>Simple Interest</a></li>
+              <li><a href='three-compound.html'>Compound Interest </a></li>
+              <li><a href='four-practice.html'>Practice</a></li>
+              <li><a href='five-compare.html'>Compare</a></li>
               </ul>
           </nav>
-      
-      
       </div>
       </header>
   
@@ -69,50 +67,71 @@
      
       <!--multiple choice-->
        <div class='multiple-choice'> 
-          <form>
+          <form id='form-one'>
             <p>question description</p>
             <p id='hintone' onclick='hintone()'>hint</p>
           
           <br>
               
           <div>
-            <input type="radio" id="choice-a"
-                   name="multiple question one" value="feedback-a">
+            <input type="radio" id="correct-choice"
+                   name="question" value="feedback-a">
             <label for="feedback-a">A. xxx</label> <br>
-            <input type="radio" id="choice-b"
-                   name="multiple question one" value="feedback-b">
+            <input type="radio" id="wrong-choice-one"
+                   name="question" value="feedback-b">
             <label for="feedback-b">B. xxx</label> <br>
-            <input type="radio" id="choice-c"
-                   name="multiple question one" value="feedback-c">
+            <input type="radio" id="wrong-choice-two"
+                   name="question" value="feedback-c">
             <label for="feedback-c">C. xxx</label> <br>
-              <input type="radio" id="choice-c"
-                   name="multiple question one" value="feedback-d">
-            <label for="feedback-c">D. xxx</label> <br>
+              <input type="radio" id="wrong-choice-three"
+                   name="question" value="feedback-d">
+            <label for="feedback-d">D. xxx</label> <br>
           </div>
+            
+            <!--button-->
+            <button id='button-one' type="submit">Submit</button>
+            <br>
+             
+               <!-- show the result & feedback-->
+              <div>
+            <p id="feedback-one"></p> 
+              </div>
+              
+              
+           </form>     
+              <br>
+         
            
-              <br><br>
-          
-          <!--entry box-->
-            <input type="text" id="type-a"
-                   name="open ended question one" value="feedback-a">
-            <label for="two-a">xx</label> <br>
+                       
+           
+           
+          <form id='form-two'>    
+<!--          entry box-->
+        
+              
+            <input type="text" id="input-a" name=" " value=" ">
+           <!-- <label for="two-a">xx</label> <br>-->
               
               
-            <br>  
               
           <!--button-->
-            <button class='button' type="submit">Submit</button>
-        <br>
+            <button id='button-two' type="submit">Submit</button>
+            <br>
 
-           <!-- show the result & feedback-->
-              <div class="result">
-            <pre id="feedback"></pre> 
-              </div>
-                       
-          </form>              
+               <!-- show the result & feedback-->
+              <div>
+            <p id="feedback-two"></p> 
+              </div>  
+             
+          </form>         
+          
       </div>
     
+     
       
+      
+    
+
         <!--reference part-->
       <div class='reference'>
           <hr>
@@ -123,7 +142,7 @@
       <br><br>
       
       <!--interactive exercises, grab the learner input-->
-      <script src="scripts/js-index.js"></script>
+      <script src="scripts/index.js"></script>
      
   </body>
 </html>
