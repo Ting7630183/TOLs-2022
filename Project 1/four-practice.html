@@ -4,21 +4,8 @@
     <meta charset="utf-8">
     <title>Four Practice</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
-    <link href="styles/style-index.css" rel="stylesheet" type="text/css">
+    <link href="styles/style-four.css" rel="stylesheet" type="text/css">
 
-    <script type="text/javascript">
-      function check1() {
-        console.log("tired")
-        let x = document.getElementById("answer1").value
-        console.log(x)
-        let xx = parseInt(xx)
-        if(xx == 34){
-          input = document.getElementById("practice1-answer")
-          input.innerHTML("you are correct")
-        }
-      
-      }
-  </script>
   </head>
   
   <body>
@@ -26,14 +13,14 @@
       
       <div class='container'>
       
-        <img src='images/logo' alt='logo' class='logo'>
+        <a href='home.html'><img src='images/logo.png'  alt='logo' class='logo'></a>
           
           <nav>
           <ul>
               <li><a href='one-objectives.html'>Objectives</a></li>
               <li><a href='two-simple.html'>Simple Interest</a></li>
               <li><a href='three-compound.html'>Compound Interest </a></li>
-              <li><a href='four-practice.html'>Practice</a></li>
+              <li><a href='four-practice.html' style='color: #000;'>Practice</a></li>
               <li><a href='five-compare.html'>Compare</a></li>
               </ul>
           </nav> 
@@ -44,70 +31,95 @@
       <!--the content in the dark blue block-->
       <div class='blueblock'>
         <h1>Practice Time!</h1>
-        <P style='color: #fff;'>
+        <P>
             Great work! You have gotten to know what the formula for compound interest is! Now 
             let’s keep practicing some examples so you can show progress overtime.  
         </P>
       </div>
+      
     
       <!--instruction content (below the dark blue block)-->
-      <div class='instruction' id="practice-1"> 
-        <h2>Compound Interest Formula</h2>
-        <a><img width = "500" height = "350" src='images/compound-interest-formula.png' alt="image attribute" ></a>
-        <h3>More Practice</h3>
+      <div class='instruction'> 
+        <h1>Compound Interest Formula</h1>
 
+          <img style='max-width: 80%; height: auto; display: block; margin-left: auto; margin-right: auto;' src='images/compound-interest-formula.png' alt="image attribute">
+     
         
-        <p id="practice_1">
-           1. Larry invested $27,000 in a savings account that pays an annual interest rate of 1.8%. 
-            The savings account is set to compound quarterly (4 times per year). How much is in 
-            Larry’s account after 5 years?
-        </p>
-        <h3>Your Guess</h3>
-        <input type="text" id="input-a" name=" " value=" ">
-        <button id='button-two' type="submit" onclick = "check1()">Submit</button>
-        <p id="practice1-answer"> </p>
+      </div>
 
+          
+  <div class='exercise'>  
+      <h2>Practice</h2>  
+          <form id='form-one'>
+             <p style='line-height: normal;'>1. Larry invested $27,000 in a savings account that pays an annual interest rate of 1.8%. The savings account is set to compound quarterly (4 times per year). How much is in Larry’s account after 5 years?</p>     
+              
+           <input type="text" id="input-a" name=" " value=" ">
+           <!-- <label for="two-a">xx</label> <br>-->
+              
+              
+              
+          <!--button-->
+            <button id='button-one' type="submit">Submit</button>
+            <br>
 
-
-        <form id='form-practice1'>    
-            <input type="text" id="input-a" name=" " value=" ">
-                <button id='button-two' type="submit">Submit</button>
-                    <br>
-                      <div>
-                          <p id="practice1-feedback"></p> 
-                      </div>  
-        </form>         
-
-        <p id="practice_2">
-          2. A deposit of $2150 earns 6% interest compounded quarterly. How much money is in the bank 
-          after 6 years?
-       </p>
-       <h3>Your Guess</h3>
-
-       <form id='form-practice2'>    
-        <input type="text" id="input-a" name=" " value=" ">
+               <!-- show the result & feedback-->
+              <div>
+            <p id="feedback-one"></p> 
+              </div>       
+           </form>   
+              
+              
+              
+          <form id='form-two'>
+             <p style='line-height: normal;'>2. A deposit of $2150 earns 6% interest compounded quarterly. How much money is in the bank after 6 years?</p> 
+              
+        <input type="text" id="input-b" name=" " value=" ">
+            
+            <!--button-->
             <button id='button-two' type="submit">Submit</button>
-                <br>
-                  <div>
-                      <p id="practice2-feedback"></p> 
-                  </div>  
-    </form> 
-
-       <p id="practice_3">
-        3. A deposit of $3000 earns 2% interest compounded semiannually. How much money is in the bank 
-        after 4 years?
-     </p>
-     <h3>Your Guess</h3>
-
-     <form id='form-practice3'>    
-      <input type="text" id="input-a" name=" " value=" ">
-          <button id='button-two' type="submit">Submit</button>
-              <br>
-                <div>
-                    <p id="practice3-feedback"></p> 
-                </div>  
-  </form> 
-    </div>
+            <br>
+             
+               <!-- show the result & feedback-->
+              <div>
+            <p id="feedback-two"></p> 
+              </div>       
+              
+           </form>  
+        
+     
+      <form id='form-three'>
+             <p style='line-height: normal;'>3. A deposit of $3000 earns 2% interest compounded semiannually. How much money is in the bank after 4 years?</p> 
+              
+        <input type="text" id="input-c" name=" " value=" ">
+            
+            <!--button-->
+            <button id='button-three' type="submit">Submit</button>
+            <br>
+             
+               <!-- show the result & feedback-->
+              <div>
+            <p id="feedback-three"></p> 
+              </div>       
+              
+           </form>  
+          
+          
+          </div>
+      
+      <br><br>
+      
+      
+          
+<div class='ending'>
+          <p class='previous'><a href='three-compoundtwo.html' style='color:#21286A; background-color: #FAF3FF; border: 2px solid #DFC7F1; border-radius: 10px;  padding: 13px 13px;'>&#8592; Previous: Compound Interest II</a></p> 
+          <p class='home'><a href='home.html' style='color:#21286A; background-color: #FAF3FF; border: 2px solid #DFC7F1; border-radius: 10px;  padding: 13px 20px;'>Home</a></p>
+          <p class='next'><a href='five-compare.html' style='color:#21286A; background-color: #FAF3FF; border: 2px solid #DFC7F1; border-radius: 10px;  padding: 13px 20px;'>Next: Compare &#8594;</a></p>
+      </div>
+          
+      
+      
+      
+    <script src="scripts/four-practice.js"></script>
       
   </body>
 </html>

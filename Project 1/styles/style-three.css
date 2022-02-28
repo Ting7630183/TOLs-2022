@@ -3,6 +3,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.logo {
+    width: 60px;
+    display: block;
+    margin: 20px;  
+}
+
 
 /* header */
 .container {
@@ -61,8 +67,17 @@ nav a:active {
 /* blue block */
 .blueblock {
     background-color: #21286A;
-    padding: 10px 170px 20px;
+    padding: 55px 170px 50px;
 }
+
+.note {
+    background-color: #FAF3FF;
+    border: solid 4px #DFC7F1;
+    border-radius: 15px;
+    padding: 12px 23px;
+    margin: 10px auto 60px;
+}
+
 
 .blueblock h1 {
     color: #fff;
@@ -81,6 +96,9 @@ nav a:active {
     font-size: 18px;
 }
 
+.note p {
+    color: #21286A;
+}
 
 
 /* instruction */
@@ -106,21 +124,6 @@ nav a:active {
 }
 
 
-/* image */
-.image img {
-    max-width: 60%;
-    height: auto;
-    /* make it center */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.image p {
-    font-size: 14px;
-    text-align: center;
-}
-
 
 /* example */
 .example {
@@ -141,37 +144,56 @@ nav a:active {
 
 
 /*multiple choice */
-.multiple-choice {
-    padding: 10px 30px 10px;
-    margin: 0 170px;
+.exercise {
+    padding: 10px 30px 0px;
+    margin: 0 170px 10px;
     background-color: #F1F1F1;
     border-radius: 10px;
 }
 
-.multiple-choice p {
+.exercise p {
     color: #515151;
     font-size: 18px;
     line-height: 0.7rem;
 }
 
+#sidenote {
+    float: right;
+    width: 30%;
+    padding: 10px;
+    background-color: #FDFFAE;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 4px solid;
+    border-color: #FFD596;
+    border-style: dotted;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+
 #hintone {
     display: inline-block;
     width: auto;
     font-size: 15px;
-    padding: 7px 15px;
+    padding: 10px 15px;
     text-align: center;
     background-color: #C8F2FF;
     margin-top: 5px;
+/*
+    border: 2px solid;
+    border-color: #FFD596;
+*/
     border-radius: 7px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 
-#button-one, #button-two, #reflection-button {
+#button-one, #button-two, #button-three, #button-four, #button-five {
   background-color: #21286A;
   border: none;
   color: white;
-  padding: 10px 25px;
-  margin: 10px 0;
+  padding: 12px 25px;
+  margin: 10px 0 0;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -181,10 +203,10 @@ nav a:active {
 
 
 
-#input-a {
+#input-a, #input-b, #input-c {
   width: 30%;
   padding: 10px 7px;
-  margin: 10px 0;
+  margin: 0 0;
   display: inline-block;
   border: 1px solid #8E8E8E;
   border-radius: 4px;
@@ -193,8 +215,8 @@ nav a:active {
 
 
 
-#feedback-one, #feedback-two {
-  width: 50%;
+#feedback-one, #feedback-two, #feedback-three, #feedback-four, #feedback-five {
+  width: 100%;
   padding: 0 0;
   margin: 5px 0;
   display: inline-block;
@@ -202,90 +224,75 @@ nav a:active {
 /*  background-color: #BAF9AA;*/
   border-radius: 4px;
   box-sizing: border-box;
+    line-height: normal;
 }
 
 
-/* references */
-.reference {
-     padding: 20px 170px;
+
+.purple {
+    background-color: #FAF3FF;
+    border: solid 4px #DFC7F1;
+    border-radius: 15px;
+    padding: 8px 25px;
+    margin: 30px 170px 20px;
+    line-height: 2rem;  
 }
 
-.reference hr {
-    height: 1px;
-    background-color: #CBCBCB;
-    border: none;
+
+#instruction-spec {
+    display: flex;
+    padding: 0px 170px;
 }
 
-#home-heading1{
-    padding: 0px 0px;
-    margin: 0px 0;
-    font-size: 30px;
-}
-#home-heading2{
-    padding: 0px 0px;
-    margin: 0px 0;
-    font-size: 35px;
-}
-#objectives-tag{
-    color: black;
-}
-#two-simple-tag{
-    color: black;
+#purple-left {
+/*    float: left;*/
+    flex: 1;
+    background-color: #FAF3FF;
+    border: solid 4px #DFC7F1;
+    border-radius: 15px;
+    padding: 8px 25px;
+    margin: 0px 8px 0 0;
+    line-height: 2rem; 
+    font-size: 17px;
 }
 
-.objectives-top-box{
-    margin:auto;
-   
-    width: 900px;
-    height: 150px;
-    text-align: center;
-    align-items: center;
-    background: rgba(225, 205, 240, 0.23);
-    border: 6px solid #E1CDF0;
-    box-sizing: border-box;
-    border-radius: 18px;
+
+
+#purple-right {
+/*    float: right;*/
+    width: 550px;
+    background-color: #F3EBF9;
+    border: solid 4px #DFC7F1;
+    border-radius: 15px;
+    padding: 8px 25px;
+    margin: 0px 0px 0 8px;
+    line-height: 2rem;  
+     font-size: 17px;
 }
 
-.conclusion{
-    margin:auto;
-    width: 880px;
-    height: 250px;
-    text-align: center;
-    align-items: center;
-    background: rgba(225, 205, 240, 0.23);
-    border: 6px solid #E1CDF0;
-    box-sizing: border-box;
-    border-radius: 18px;
+
+.ending {
+/*    padding: 20px 170px;*/
+    margin: 20px 170px 120px;
 }
 
-#objectives-top-box-note{
-    font-weight: bold;
-    text-align: center;
+
+.previous {
+  width: 33.33%;
+  text-align: center;
+  float: left;
 }
 
-li{
-    margin: 10px 0;
-  }
 
-#two-simple-definition{
-    font-weight: bold;
-    font-size: large;
-  }
-
-#simple-interest-answer-box{
-    width: 220px;
-    height: 40px;
-    text-align: center;
-    background: rgba(225, 205, 240, 0.23);
-    border: 6px solid #E1CDF0;
-    box-sizing: border-box;
-    border-radius: 4px;
+.home {
+  width: 33.33%;
+  text-align: center;
+  float: left;
 }
-#reflection-box{
-    height:150px;
-    width: 500px;
-    border: 3px solid #E1CDF0;
-    box-sizing: border-box;
-    border-radius: 18px;
+
+.next {
+  width: 33.33%;
+  text-align: center;
+  float: left;
 }
 

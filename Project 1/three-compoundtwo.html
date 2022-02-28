@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Compound interest II</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+    <link href="styles/style-threetwo.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+      <header> <!--website logo & menu-->
+      
+      <div class='container'>
+      
+        <a href='home.html'><img src='images/logo.png'  alt='logo' class='logo'></a>
+          
+          <nav>
+          <ul>
+              <li><a href='one-objectives.html'>Objectives</a></li>
+              <li><a href='two-simple.html'>Simple Interest</a></li>
+              <li><a href='three-compound.html' style='color: #000;'>Compound Interest </a></li>
+              <li><a href='four-practice.html'>Practice</a></li>
+              <li><a href='five-compare.html'>Compare</a></li>
+              </ul>
+          </nav>
+      
+      
+      </div>
+      </header>
+  
+      
+      <!--the content in the dark blue block-->
+      <div class='blueblock'>
+           <h1>Compound Interest II</h1>
+          
+          <p><b style='color:#fff'>Congratulations!</b> You successfully ‘invented’ the formula of compound interest—actually, only part of the formula. Our previous examples were based on one critical condition: Jasmine only gets the savings once a year. In some cases, the bank will provide other options that ask people to compound multiple times a year. <br>
+              <b style='color:#fff'>How will these changes be reflected in the formula?</b></p>
+      
+      </div>
+      
+      
+      
+      <!--instruction content (below the dark blue block)-->
+      <div class='instruction'> 
+       
+          <h2>Example</h2>
+          <p>Suppose she compounds twice a year. Consequently, the interest rate will be cut down to half as the previous annual interest rate, which is now 2.5%.</p>
+      </div>
+
+     
+      <!--exercises-->
+       <div class='exercise'>
+<!--           question one-->
+          <form id='form-one'>
+            <p>1. How much will she earn by the end of the 1st year?</p>
+            <p id='hintone' onclick='hintone()'>Hint</p>
+          
+          <br>
+                
+           <input type="text" id="input-a" name=" " value=" ">
+           <!-- <label for="two-a">xx</label> <br>-->
+              
+              
+              
+          <!--button-->
+            <button id='button-one' type="submit">Submit</button>
+              
+               <!-- show the result & feedback-->
+              <div>
+            <p id="feedback-one"></p> 
+              </div>       
+           </form>     
+              <br>
+                 
+          
+<!--           question two-->
+           <form id='form-two'>
+            <p style='line-height: normal;'>2. What about the 10th year? Are you confident in generating the formula? <br>Choose the one you’ve got from below.</p>
+               
+             <span id='sidenote'> <b>Side note:</b> P is the original principal, r is the annual interest rate, n is the compounding frequency, t is the overall length of time the interest is applied (the time unit is ‘year’).</span>
+           
+          <div style='font-size: 17px;'>
+            <input type="radio" id="correct-choice"
+                   name="question" value="Good job!">
+            <label for="feedback-a">A. P(1+ [r/n] ) ^ (nt)</label> <br>
+            <input type="radio" id="wrong-choice-one"
+                   name="question" value="Try again!">
+            <label for="feedback-b">B. P(1- [r/n] ) ^ (nt)</label> <br>
+            <input type="radio" id="wrong-choice-two"
+                   name="question" value="Try again!">
+            <label for="feedback-c">C. P(1- rn) ^ (n/t)</label> <br>
+              <input type="radio" id="wrong-choice-three"
+                   name="question" value="Try again!">
+            <label for="feedback-d">D. P(1+ rn) ^ (n/t)</label> <br>
+          </div>
+            
+            <!--button-->
+            <button id='button-two' type="submit">Submit</button>
+            <br>
+             
+               <!-- show the result & feedback-->
+              <div>
+            <p id="feedback-two"></p> 
+            
+              </div>
+              
+           </form> 
+               
+               
+               
+           
+<!--           question three-->
+           <form id='form-three'>
+            <p style='line-height: normal;'>3. Suppose Jasmine compounds four times a year. How much will she earn by the end of the 2nd year? </p>
+               <p id='hinttwo' onclick='hinttwo()'>Hint</p>
+             
+           <div style='font-size: 17px;'>
+            <input type="radio" id="correct-choice"
+                   name="question" value="Good job!">
+            <label for="feedback-a">A. 4299.81696</label> <br>
+            <input type="radio" id="wrong-choice-one"
+                   name="question" value="Try again!">
+            <label for="feedback-b">B. 4299.81696</label> <br>
+            <input type="radio" id="wrong-choice-two"
+                   name="question" value="Try again!">
+            <label for="feedback-c">C. 1440</label> <br>
+              <input type="radio" id="wrong-choice-three"
+                   name="question" value="Try again!">
+            <label for="feedback-d">D. 1104.486101</label> <br>
+          </div>
+            
+            <!--button-->
+            <button id='button-three' type="submit">Submit</button>
+            <br>
+             
+               <!-- show the result & feedback-->
+              <div>
+            <p id="feedback-three"></p> 
+            
+              </div>
+               
+           </form>    
+                  
+      </div>
+    
+     
+      
+      <div class='instruction'>
+      <p>Congratulations, you have successfully 'invented' the formula of compound interest! Next you'll enhance your understanding through some exercises. Good luck!</p>
+      </div>
+      
+
+      
+       <br><br>
+      
+      
+       <div class='ending'>
+          <p class='previous'><a href='three-compound.html' style='color:#21286A; background-color: #FAF3FF; border: 2px solid #DFC7F1; border-radius: 10px;  padding: 13px 15px;'>&#8592; Previous: Compound Interest I</a></p> 
+          <p class='home'><a href='home.html' style='color:#21286A; background-color: #FAF3FF; border: 2px solid #DFC7F1; border-radius: 10px;  padding: 13px 20px;'>Home</a></p>
+          <p class='next'><a href='four-practice.html' style='color:#21286A; background-color: #FAF3FF; border: 2px solid #DFC7F1; border-radius: 10px;  padding: 13px 20px;'>Next: Practice &#8594;</a></p>
+      </div>
+      
+      
+      
+      <!--interactive exercises, grab the learner input-->
+      <script src="scripts/three-compoundtwo.js"></script>
+     
+  </body>
+</html>

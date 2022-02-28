@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Compound interest</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+    <link href="styles/style-three.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+      <header> <!--website logo & menu-->
+      
+      <div class='container'>
+      
+        <a href='home.html'><img src='images/logo.png'  alt='logo' class='logo'></a>
+          
+          <nav>
+          <ul>
+              <li><a href='one-objectives.html'>Objectives</a></li>
+              <li><a href='two-simple.html'>Simple Interest</a></li>
+              <li><a href='three-compound.html' style='color: #000;'>Compound Interest </a></li>
+              <li><a href='four-practice.html'>Practice</a></li>
+              <li><a href='five-compare.html'>Compare</a></li>
+              </ul>
+          </nav>
+      
+      
+      </div>
+      </header>
+  
+      
+      <!--the content in the dark blue block-->
+      <div class='blueblock'>
+           <h1>Compound Interest I</h1>
+          
+          <div class='note'><p>Now we can dive into <b>compound interest</b>. Similar to simple interest, there is also a formula to calculate compound interest. But instead of telling directly what it is, we want to invite you to ‘invent’ the formula by yourself! Don’t worry, we believe you can do it if you read through the instructions and prompts. Enjoy the invention! </p> </div>
+          
+          
+          
+        <h2>Definition</h2>
+          
+          <p>Understanding the text definition is the first step to inventing your formula. A very simple way to comprehend this concept is: compound interest is <b style='color: #fff;'>the interest you earn on interest</b>. When you were calculating simple interest, the interest was generated out of a <b style='color: #fff;'>constant</b> amount of principal. But here as you can see from the definition, the interest you earned in the previous year becomes part of the ‘principal’ of the next year.
+</p>
+      
+      </div>
+      
+      
+      
+      <!--instruction content (below the dark blue block)-->
+      <div class='instruction'> 
+          
+          <h1>Invent the formula</h1>
+
+          
+        <p>Let’s use an example to help you approach the formula of compound interest. (Note: the figures in the examples are all imaginary and do not represent the practical cases.)
+</p>     
+      <br>
+          <h2>Example</h2>
+          <p>Your friend Jasmine is planning to save her allowance in the bank because she wants to visit New York in the future using her own money. Her current deposit is $1000, and she learns that the annual interest rate the bank offers is 5%. Now she wants you to help her evaluate whether she will gain enough money for the trip. </p>
+
+          
+      </div>
+
+     
+      <!--exercises-->
+       <div class='exercise'>
+<!--           question one-->
+          <form id='form-one'>
+            <p>1. Suppose she starts saving money at the beginning of this year. How much will she earn by the end of the year?</p>
+            <p id='hintone' onclick='hintone()'>Hint</p>
+          
+          <br>
+              
+             
+           <input type="text" id="input-a" name=" " value=" ">
+           <!-- <label for="two-a">xx</label> <br>-->
+              
+              
+              
+          <!--button-->
+            <button id='button-one' type="submit">Submit</button>
+              
+              <span id='sidenote'> <b>Side note:</b> we encourage you to write down the process of calculation on the paper, especially how you apply the values to the formula of simple interest. This will help you invent!
+</span>
+
+               <!-- show the result & feedback-->
+              <div>
+            <p id="feedback-one"></p> 
+              </div>       
+           </form>     
+              <br>
+                 
+          
+<!--           question two-->
+           <form id='form-two'>
+            <p style='line-height: normal;'>2. How much will she earn by the end of the second year? Remember: based on the definition of compound interest, your current principal should involve the interest from the first year.</p>
+             
+           <input type="text" id="input-b" name=" " value=" ">
+           <!-- <label for="two-a">xx</label> <br>-->
+              
+              
+              
+          <!--button-->
+            <button id='button-two' type="submit">Submit</button>
+            <br>
+
+               <!-- show the result & feedback-->
+              <div>
+            <p id="feedback-two"></p> 
+              </div>       
+           </form>    
+      
+      
+           
+<!--           question three-->
+           <form id='form-three'>
+            <p style='line-height: normal;'>3. How much will she earn by the end of the third year?</p>
+             
+           <input type="text" id="input-c" name=" " value=" ">
+           <!-- <label for="two-a">xx</label> <br>-->
+              
+              
+              
+          <!--button-->
+            <button id='button-three' type="submit">Submit</button>
+            <br>
+
+               <!-- show the result & feedback-->
+              <div>
+            <p id="feedback-three"></p> 
+              </div>       
+           </form>    
+                 
+      
+      </div>
+    
+     <br>
+      
+      <div class='blueblock'>
+           <h1>Let’s Pause for a second.</h1>
+          
+          <p>Take a look at the three problems you’ve just solved. Is your calculation process similar to the method below?</p>
+          
+          <div class='purple'><p style='color: #21286A;'>1st Year:  1000 x (1+ 5%) = 1050 <br> 
+           2nd Year: 1050 x (1+5%) = 1102.5 <br>
+           3rd Year: 1102.5 x (1+5%) = 1157.625</p> </div>
+      
+    <br>
+           <h1>Let’s Think.</h1>
+          
+          <p>How much will she earn by the end of the 10th year? What about the 30th year? Are you still willing to calculate it year by year? I guess not. So this is why we need a <b>formula</b>—to simplify the process of repetitive tasks and approach the result faster!</p>
+      
+      </div>
+      
+    
+      <br>
+      <div class='exercise'>  
+          <form id='form-four'>
+             <p style='line-height: normal;'>Look at your calculation process on the paper again. 
+If we want to generate a widely applied pattern for these three expressions, you may need to…</p>     
+              
+              
+          <div style='font-size: 17px;'>
+            <input type="radio" id="correct-choice"
+                   name="question" value="feedback-a">
+            <label for="feedback-a">A. Replace the final amount with the expression, e.g. replace 1050 with 1000x(1+5%) </label> <br>
+            <input type="radio" id="wrong-choice-one"
+                   name="question" value="feedback-b">
+            <label for="feedback-b">B. Multiply three expressions, and offset the common values on both sides of the equal.
+</label>
+              <br>
+          </div>
+            
+            <!--button-->
+            <button id='button-four' type="submit">Submit</button>
+            <br>
+             
+               <!-- show the result & feedback-->
+              <div>
+            <p id="feedback-four"></p> 
+              </div>
+              
+              
+           </form>  
+        
+      </div>
+      
+       <div class='instruction'>
+      <p>Perform these methods by yourself. Have you found any patterns? Are you able to figure out the final amount at the end of the 10th year?</p>  
+      </div>
+      
+       <div id='instruction-spec'>     
+        <div id='purple-left'><p style='color: #21286A;'>1st Year:  1000 x (1+ 5%) = 1050<br> 
+          2nd Year: 1050 x (1+5%) = 1102.5<br>
+          3rd Year: 1102.5 x (1+5%) = 1157.625</p> </div>
+           
+           <div id='purple-right'><p style='color: #21286A;'>1000 x (1+ 5%) = 1050<br> 
+           1000 x 1050 x (1+5%)^2 = 1050 x 1102.5<br>
+           1000 x 1050 x 1102.5 x (1+5%)^3 = 1050 x 1102.5 x 1157.625</p> </div>
+        
+      </div>
+      
+      <br>
+      <div class='instruction'>
+           <h1>Wow, we’re almost there!</h1>
+      </div>
+         
+          <div class='exercise'>
+      <p>Which of the following do you think is the right formula?</p>
+           
+    
+          <span id='sidenote'> <b>Side note:</b> P is the original principal, r is the annual interest rate, t is the overall length of time the interest is applied (the time unit is ‘year’).</span>
+          
+          <form id='form-five'>
+          <div style='font-size: 17px;'>
+            <input type="radio" id="wrong-choice-one"
+                   name="question" value="Try again!">
+            <label for="feedback-a">A. P(1- r) ^ (1/t) </label> <br>
+            <input type="radio" id="wrong-choice-two"
+                   name="question" value="Try again!">
+            <label for="feedback-b">B. P(1- r) ^ (t) </label> <br>
+            <input type="radio" id="correct-choice"
+                   name="question" value="Good job!">
+            <label for="feedback-c">C. P(1+ r) ^ (t)</label> <br>
+              <input type="radio" id="wrong-choice-three"
+                   name="question" value="Try again!">
+            <label for="feedback-d">D. P(1+ r) ^ (1/t)</label> <br>
+          </div>
+            
+            <!--button-->
+            <button id='button-five' type="submit">Submit</button>
+            <br>
+             
+               <!-- show the result & feedback-->
+              <div>
+            <p id="feedback-five"></p> 
+            
+              </div>
+              
+           </form>    
+              </div>
+      
+          
+      
+       <br><br>
+      
+
+      <div class='ending'>
+          <p class='previous'><a href='two-simple.html' style='color:#21286A; background-color: #FAF3FF; border: 2px solid #DFC7F1; border-radius: 10px;  padding: 13px 20px;'>&#8592; Previous: Simple Interest</a></p> 
+          <p class='home'><a href='home.html' style='color:#21286A; background-color: #FAF3FF; border: 2px solid #DFC7F1; border-radius: 10px;  padding: 13px 20px;'>Home</a></p>
+          <p class='next'><a href='three-compoundtwo.html' style='color:#21286A; background-color: #FAF3FF; border: 2px solid #DFC7F1; border-radius: 10px;  padding: 13px 20px;'>Next: Compound Interest II &#8594;</a></p>
+      </div>
+      
+      
+      
+      <!--interactive exercises, grab the learner input-->
+      <script src="scripts/three-compound.js"></script>
+     
+  </body>
+</html>

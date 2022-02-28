@@ -4,14 +4,9 @@
     <meta charset="utf-8">
     <title>Compound interest</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
-    <link href="styles/style-index.css" rel="stylesheet" type="text/css">
+    <link href="styles/style-five.css" rel="stylesheet" type="text/css">
 
-    <script type="text/javascript">
-      function compare() {
-        let inputElement = document.getElementById("reflection-answer")
-        inputElement.innerHTML = "Answer: Not necessarily. The principal amount, rate of interest, as well as the number of years a person invests impacts the final accumulated amount. Starting off with a large principal and doing simple interest, might lead to more total money accumulated, than starting with a low principal and compounding it for the same amount of time. It will depend on your variables, so it is always good to use the skills you have learnt to predict and plan your future finances! " 
-      }
-  </script>
+ 
 
   </head>
   
@@ -20,15 +15,14 @@
       
       <div class='container'>
       
-        <img src='images/logo' alt='logo' class='logo'>
-          
+        <a href='home.html'><img src='images/logo.png'  alt='logo' class='logo'></a>
           <nav>
           <ul>
               <li><a href='one-objectives.html'>Objectives</a></li>
               <li><a href='two-simple.html'>Simple Interest</a></li>
               <li><a href='three-compound.html'>Compound Interest </a></li>
               <li><a href='four-practice.html'>Practice</a></li>
-              <li><a href='five-compare.html'>Compare</a></li>
+              <li><a href='five-compare.html' style='color: #000;'>Compare</a></li>
               </ul>
           </nav> 
       </div>
@@ -38,7 +32,7 @@
       <!--the content in the dark blue block-->
       <div class='blueblock'>
         <h1>Compare Simple & Compound Interest!</h1>
-        <P style='color: #fff;'>
+        <P>
           Before you leave this course, we want to invite you to ponder over the following two 
           open-ended questions that you may encounter in practical contexts. Think carefully 
           first and compare your ideas with the insights we provide. You can do it!  
@@ -47,28 +41,51 @@
 
     
       <!--instruction content (below the dark blue block)-->
-      <div class='instruction' id="practice-1"> 
+      <div class='instruction'> 
         <h1>Graph of Basic Relationship</h1>
-        <a><img width = "500" height = "350" src='images/graph-of-basic-relationship.png' alt="image attribute" ></a>
+          
+           <img style='max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto;' src='images/graph-of-basic-relationship.png' alt="image attribute">
+          
+          <p>You may have known, exponential change is more powerful than linear change. As you can see in the graph above, the difference between simple interest and compound interest gets bigger as years go by.</p>
+<br>
+       
 
-        <h2>Your Reflection</h2>
-
-        <p>Is compound interest always better than simple interest? </p>
-        <input type="text" id="reflection-box" name=" " value=" ">
+        <p>Here's one reflection question for you: is compound interest always better than simple interest? </p>
+          
+        
+          
+          <input type="text" id="reflection-box" name=" " value=" ">
         <br>
         <button id='reflection-button' type="button" onclick="compare()">Submit</button>  
         <p id="reflection-answer"> </p>
 
-        <div class="conclusion">
-          <h4 id="conclusion-note">Conclusion</h4>
-          <p id="conclusion-text">
+       
+          <br>
+      
+        </div>
+      
+      
+      <div class='blueblock'>
+          <h1>Final Message</h1>
+          <p>
             Now you have learnt the basics of how to calculate simple and compound interest and some 
             differences between them. We hope it helps you in managing your own finances in the future, 
             and ways to grow your money! Happy Calculating!
       </div>
 
+      
+      
+      <br><br>
+      <div class='ending'>
+          <p class='previous'><a href='four-practice.html' style='color:#21286A; background-color: #FAF3FF; border: 2px solid #DFC7F1; border-radius: 10px;  padding: 13px 20px;'>&#8592; Previous: Practice</a></p> 
+          <p class='home'><a href='home.html' style='color:#21286A; background-color: #FAF3FF; border: 2px solid #DFC7F1; border-radius: 10px;  padding: 13px 20px;'>Home</a></p>
+          <p class='next'></p>
+      </div>
+      
+      
+      
 
-        
+     <script src="scripts/five-compare.js"></script>   
 
   </body>
 </html>
