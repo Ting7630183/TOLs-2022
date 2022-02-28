@@ -2,9 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Compound interest</title>
+    <title>Four Practice</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
     <link href="styles/style-index.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+      function check1() {
+        console.log("tired")
+        let x = document.getElementById("answer1").value
+        console.log(x)
+        let xx = parseInt(xx)
+        if(xx == 34){
+          input = document.getElementById("practice1-answer")
+          input.innerHTML("you are correct")
+        }
+      
+      }
+  </script>
   </head>
   
   <body>
@@ -29,38 +43,71 @@
       
       <!--the content in the dark blue block-->
       <div class='blueblock'>
-        <h1>Practice Using Compound Interest Formula</h1>
+        <h1>Practice Time!</h1>
         <P style='color: #fff;'>
             Great work! You have gotten to know what the formula for compound interest is! Now 
             let’s keep practicing some examples so you can show progress overtime.  
         </P>
       </div>
-
     
       <!--instruction content (below the dark blue block)-->
       <div class='instruction' id="practice-1"> 
-        <h2>More practice using compound interest formula:</h2>
+        <h2>Compound Interest Formula</h2>
+        <a><img width = "500" height = "350" src='images/compound-interest-formula.png' alt="image attribute" ></a>
+        <h3>More Practice</h3>
 
-        <h3>Practice 1:</h3>
-        <p>
-            Larry invested $27,000 in a savings account that pays an annual interest rate of 1.8%. 
+        
+        <p id="practice_1">
+           1. Larry invested $27,000 in a savings account that pays an annual interest rate of 1.8%. 
             The savings account is set to compound quarterly (4 times per year). How much is in 
             Larry’s account after 5 years?
         </p>
+        <h3>Your Guess</h3>
+        <input type="text" id="input-a" name=" " value=" ">
+        <button id='button-two' type="submit" onclick = "check1()">Submit</button>
+        <p id="practice1-answer"> </p>
 
-        <h3>Practice 2:</h3>
-        <p>
-            A deposit of $2150 earns 6% interest compounded quarterly. How much money is in the bank 
-            after 6 years?
-        </p>
 
-        <h3>Practice 3:</h3>
 
-        <p>
-            A deposit of $3000 earns 2% interest compounded semiannually. How much money is in the bank 
-            after 4 years?
-        </p>
-      </div>
+        <form id='form-practice1'>    
+            <input type="text" id="input-a" name=" " value=" ">
+                <button id='button-two' type="submit">Submit</button>
+                    <br>
+                      <div>
+                          <p id="practice1-feedback"></p> 
+                      </div>  
+        </form>         
+
+        <p id="practice_2">
+          2. A deposit of $2150 earns 6% interest compounded quarterly. How much money is in the bank 
+          after 6 years?
+       </p>
+       <h3>Your Guess</h3>
+
+       <form id='form-practice2'>    
+        <input type="text" id="input-a" name=" " value=" ">
+            <button id='button-two' type="submit">Submit</button>
+                <br>
+                  <div>
+                      <p id="practice2-feedback"></p> 
+                  </div>  
+    </form> 
+
+       <p id="practice_3">
+        3. A deposit of $3000 earns 2% interest compounded semiannually. How much money is in the bank 
+        after 4 years?
+     </p>
+     <h3>Your Guess</h3>
+
+     <form id='form-practice3'>    
+      <input type="text" id="input-a" name=" " value=" ">
+          <button id='button-two' type="submit">Submit</button>
+              <br>
+                <div>
+                    <p id="practice3-feedback"></p> 
+                </div>  
+  </form> 
+    </div>
       
   </body>
 </html>

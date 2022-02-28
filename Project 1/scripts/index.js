@@ -55,8 +55,6 @@ formone.addEventListener("submit", function(event) {
 
 
 
-
-
 //second one
 formtwo.addEventListener("submit", function(event) {
     var userinput = document.getElementById("input-a").value;
@@ -73,9 +71,29 @@ formtwo.addEventListener("submit", function(event) {
         document.getElementById("feedback-two").style.padding = '10px 15px';
         output = output + 'Try again!';
     }
+     
+// print out the result
+  logtwo.innerText = output;  
+  event.preventDefault();
+}, false);
+
+//practice1
+form-practice1.addEventListener("submit", function(event) {
+    var userinput = document.getElementById("input-a").value;
+    var strinput = Number(userinput);
+    var output = "";
     
 
-    
+    if (userinput == 34) {
+        document.getElementById("practice1-feedback").style.backgroundColor = '#BAF9AA'; 
+        document.getElementById("practice1-feedback").style.padding = '10px 15px';
+        output = output + 'Correct!';
+    } else {
+        document.getElementById("practice1-feedback").style.backgroundColor = '#F6BBBB';
+        document.getElementById("practice1-feedback").style.padding = '10px 15px';
+        output = output + 'Try again!';
+    }
+     
 // print out the result
   logtwo.innerText = output;  
   event.preventDefault();
