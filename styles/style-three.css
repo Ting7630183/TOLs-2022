@@ -154,7 +154,7 @@ nav a:active {
 .exercise p {
     color: #515151;
     font-size: 18px;
-    line-height: normal;
+    line-height: 0.7rem;
 }
 
 #sidenote {
