@@ -209,3 +209,8 @@ nav a:active {
   float: left;
 }
 
+.reflection-box{
+    color: #000;
+    font-weight: 800;
+    font-size: 35px;
+}
